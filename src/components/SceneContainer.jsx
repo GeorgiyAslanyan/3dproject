@@ -16,12 +16,12 @@ const SceneContainer = () => {
   const imgTexture = useLoader(THREE.TextureLoader, circleImg);
   const bufferRef = useRef();
 
-  const count = 100;
+  const count = 150;
   const separation = 3;
 
   let t = 1;
-  let f = 0.002;
-  let a = 4;
+  let f = 0.001;
+  let a = 5;
 
   const graph = useCallback(
     (x, z) => {
@@ -78,7 +78,7 @@ const SceneContainer = () => {
         <pointsMaterial
           attach="material"
           map={imgTexture}
-          color={"#ADD8E6"}
+          color={"black"}
           size={0.5}
           sizeAttenuation
           transparent={false}
