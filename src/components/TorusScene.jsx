@@ -7,7 +7,7 @@ import * as THREE from "three";
 import { useLoader } from "@react-three/fiber";
 import { Bloom, EffectComposer, Vignette } from "@react-three/postprocessing";
 
-const SphereScene = () => {
+const TorusScene = () => {
   const imgTexture = useLoader(THREE.TextureLoader, circleImg);
 
   const lightRef = useRef(null);
@@ -25,4 +25,4 @@ const SphereScene = () => {
   );
 };
 
-export default SphereScene;
+export default TorusScene;

@@ -1,23 +1,12 @@
 import React, { Suspense } from "react";
-import { OrbitControls, Text, Text3D } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Person } from "../models/Person";
-import { Bloom, EffectComposer, Vignette } from "@react-three/postprocessing";
-
-const text = {
-		size: 80,
-		height: 5,
-		curveSegments: 12,
-		bevelEnabled: true,
-		bevelThickness: 10,
-		bevelSize: 8,
-		bevelOffset: 0,
-		bevelSegments: 5
-}
 
 
-const PixelProject = () => {
+
+const PersonAnimated = () => {
   return (
-    <Suspense fallback={null}>
+    <>
       <group position={[0, -1, 0]} rotation={[0, Math.PI / 2, 0]}>
         <Person />
       </group>
@@ -39,8 +28,8 @@ const PixelProject = () => {
         shadow-mapSize-height={1024}
       />
       <OrbitControls enableZoom={false} />
-    </Suspense>
+    </>
   );
 };
 
-export default PixelProject;
+export default PersonAnimated;

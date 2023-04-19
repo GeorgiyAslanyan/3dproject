@@ -3,7 +3,8 @@ import React from 'react'
 const Footer = () => {
   return (
     <div className="grid sm:flex bottom-0 w-full h-20 bg-[rgba(255,255,255,0.5)] z-10 relative backdrop-blur-xl font-bold px-[20px] sm:px-[50px] justify-between items-center">
-      <div>©2023. by Georgy Aslanyan</div>
+      
+      <a href="https://georgy-aslanyan.vercel.app/" target="_blank"  className='hover:text-blue-500' rel="noopener noreferrer"><div>©2023. by Georgy Aslanyan</div></a>
       <div className="flex gap-3">
         <a
           target="_blank"

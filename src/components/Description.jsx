@@ -1,5 +1,5 @@
 import React from "react";
-import SphereScene from "./SphereScene";
+import TorusScene from "./TorusScene";
 import { Canvas } from "@react-three/fiber";
 
 const Description = () => {
@@ -77,7 +77,7 @@ const Description = () => {
         color=""
         camera={{ position: [4, 0, 0], fov: 75 }}
       >
-        <SphereScene />
+        <TorusScene />
       </Canvas>
     </div>
   );
